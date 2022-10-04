@@ -1,5 +1,2 @@
-# <img src="https://i.imgur.com/M5tdOPv.png" alt="Sidejourney" style="width: 500px" />
-
-
-
+# sidejourney
 A website to view github profiles
