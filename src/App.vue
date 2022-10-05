@@ -50,8 +50,8 @@ export default {
           // res[0] contains user details
           // res[1] contains array of repositories.
 
-          self.userRepos = res[1];
           self.userDetails = res[0];
+          self.userRepos = res[1];
         })
         .catch(function (err) {
           alert(err);
