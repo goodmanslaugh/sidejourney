@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sidejourney</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css" rel="stylesheet" />
-</head>
-
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
     <section class="section">
-        <div class="container">
-            <h1 class="title" style="text-align:center">Sidejourney</h1>
-            <p class="subtitle" style="text-align:center">
-                A website to view github profiles.
-            </p>
-        </div>
+      <div class="container">
+        <h1 class="title">Hello Sidejourney</h1>
+        <p class="subtitle">
+          A website to view github profiles created using
+          <strong>Bulma</strong>!
+        </p>
+        <form id="form">
+          <input type="text" id="search" placeholder="Search a Github User" />
+        </form>
+        <main id="main"></main>
+      </div>
     </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="columns is-centered">
-                <form action="/" method="post">
-                    <div class="card">
-                        <div class="card-content login">
-                            <div class="field">
-                                <label class="label">Username</label>
-                                <div class="control">
-                                    <input class="input" type="text" placeholder="@Username" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-</body>
-
+  </body>
 </html>
