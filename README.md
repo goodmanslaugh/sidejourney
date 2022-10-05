@@ -1,4 +1,24 @@
-# <img src="https://i.imgur.com/M5tdOPv.png" alt="sidejourney" style="height:100px" />
-A website to view github profiles developed using Bulma CSS framework.
+# side-journey
 
-![x](https://user-images.githubusercontent.com/115019431/194067656-aea70106-5ef3-40ad-8ef7-7a043b524e43.png)
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
