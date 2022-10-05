@@ -6,6 +6,8 @@ SideJourney is a front-end web application to get an overview of your github acc
 
 <p align="center">
     <img src="images/ui1.png" alt="sidejourney">
+    <br>
     <img src="images/ui2.png" alt="sidejourney">
 </p>
+
 
