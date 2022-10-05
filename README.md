@@ -7,12 +7,12 @@ SideJourney is a front-end web application to get an overview of your github acc
 
 ## User Interface
 
-#### Home Page
+#### Home Page:
 <p align="center">
-    <img src="images/ui1.png" alt="sidejourney">
+    <img src="images/ui1.png" alt="sidejourney" height="200">
 </p>
 
-#### After entering username
+#### After entering username:
 <p align="center">
     <img src="images/ui2.png" alt="sidejourney">
 </p>
