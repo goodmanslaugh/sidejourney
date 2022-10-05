@@ -2,6 +2,7 @@
     <img src="images/logo.png" alt="sidejourney" style="height:100px">
 </p>
 
+##Description
 SideJourney is a front-end web application to get an overview of your github account
 
 <p align="center">
