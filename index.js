@@ -21,8 +21,9 @@ async function getRepos(username) {
 }
 
 function createUserCard(user) {
-  if (user.name == null || undefined) return alert("User not found");
-  if (user.bio == null || undefined) user.bio = "No bio";
+  if (undefined) return alert("User not found");
+  if (user.name == null) user.name = " ";
+  if (user.bio == null || undefined) user.bio = " ";
   const cardHTML = `
         <div class="card">
             <div>
