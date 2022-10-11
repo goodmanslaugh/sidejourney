@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 
+#logo{
+   height: 200px;
+}
 ::-webkit-scrollbar {
     display: none;
 }
