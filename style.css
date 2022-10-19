@@ -39,6 +39,11 @@ input {
     margin-bottom: 2rem;
 }
 
+input:focus {     
+    box-shadow: 0 5px 10px rgb(250, 116, 139) ,
+        0 15px 40px pink;   
+}
+
 input::placeholder {
     color: #bbb;
 }
@@ -48,8 +53,10 @@ input:focus {
 }
 
 .card {
-    background-color: #4c2885;
-    background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
+    /* background-color: #4c2885; */
+    /* background-color: red; */
+
+    background-image: linear-gradient(315deg, red 0%, #4c11ac 100%);
     border-radius: 20px;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
         0 15px 40px rgba(0, 0, 0, 0.1);
