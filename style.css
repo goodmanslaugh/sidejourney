@@ -67,6 +67,9 @@ input:focus {
     color: #eee;
     margin-left: 2rem;
 }
+.user-info li strong{
+    color: #eee;
+}
 
 .user-info h2 {
     margin-top: 0;
@@ -100,4 +103,9 @@ input:focus {
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     text-decoration: none;
+}
+.repo:hover {
+    color: #2a2a72;
+    background-color: white;
+
 }
