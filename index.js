@@ -4,6 +4,19 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
+const xssTags = {
+    "\"": "&quot;",
+    "'": "&#x27;",
+    "/": "&#x2F;",
+    "<": "&lt;",
+    ">": "&gt;"
+};
+function xssEscape(str) {
+    return str.replace(/["'/<>]/g, function(tag) {
+        return xssTags[tag] || tag;
+    });
+}
+
 async function getUser(username) {
   const resp = await fetch(BASEURL + username);
   const respData = await resp.json();
@@ -24,6 +37,8 @@ function createUserCard(user) {
   if (user.message) return alert("Error: "+user.message);
   if (!user.name) user.name = user.login; //if user has no name, use their username instead
   if (!user.bio) user.bio = "";
+  user.name = xssEscape(user.name);
+  user.bio = xssEscape(user.bio);
   const cardHTML = `
         <div class="card">
             <div>
@@ -57,6 +72,7 @@ function addReposToCard(repos) {
     .forEach((repo) => {
       const repoEl = document.createElement("a");
       repoEl.classList.add("repo");
+      repo.name = xssEscape(repo.name);
 
       repoEl.href = repo.html_url;
       repoEl.target = "_blank";
