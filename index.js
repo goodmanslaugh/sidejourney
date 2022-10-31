@@ -34,7 +34,7 @@ async function getRepos(username) {
 }
 
 function createUserCard(user) {
-  if (user.message) return alert("Error: "+user.message);
+  if (user.message) return userNotFound();
   if (!user.name) user.name = user.login; //if user has no name, use their username instead
   if (!user.bio) user.bio = "";
   user.name = xssEscape(user.name);
@@ -60,6 +60,8 @@ function createUserCard(user) {
         </div>
     `;
 
+  
+  
   main.innerHTML = cardHTML;
 }
 
@@ -80,6 +82,33 @@ function addReposToCard(repos) {
 
       reposEl.appendChild(repoEl);
     });
+}
+
+function userNotFound(){
+  
+    const notfoundcardHTML = `
+          <div class="errCard">
+            <div>
+                <img class="avatar" src="errImage.png" 
+                width="230" 
+                height="230" />
+            </div>
+            <div class="errText">
+                <h2>User not found</h2>
+                <p>Write again or try again later</p>
+                <ul class="info">
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                    <li><strong></strong></li>
+                </ul>
+                <br>
+                <div id="repos"></div>
+            </div>
+        </div>
+      `;
+
+
+    main.innerHTML = notfoundcardHTML;
 }
 
 form.addEventListener("submit", (e) => {
